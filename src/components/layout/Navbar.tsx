@@ -31,8 +31,14 @@ export function Navbar() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="bg-primary-600 w-full z-50 relative">
-      <Container>
+    <header className="bg-primary-800 w-full z-50 relative overflow-hidden">
+      {/* Grid lines to blend with Hero section */}
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_right,rgb(255_255_255/0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgb(255_255_255/0.08)_1px,transparent_1px)] bg-[size:180px_180px]"
+      />
+
+      <Container className="relative">
         <nav
           className="flex h-20 items-center justify-between"
           aria-label="Main navigation"
@@ -103,7 +109,7 @@ export function Navbar() {
       <div
         id="mobile-menu"
         className={cn(
-          "fixed inset-0 top-20 z-40 bg-primary-600 transition-transform duration-300 ease-in-out md:hidden",
+          "fixed inset-0 top-20 z-40 bg-primary-800 transition-transform duration-300 ease-in-out md:hidden",
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
