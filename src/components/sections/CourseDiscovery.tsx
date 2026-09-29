@@ -61,6 +61,7 @@ export function CourseDiscovery() {
                   src={course.image}
                   alt={course.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                   className="object-cover"
                 />
                 
@@ -115,7 +116,7 @@ export function CourseDiscovery() {
                           i > 0 && "-ml-2"
                         )}
                       >
-                        <Image src={src} alt="" fill className="object-cover" />
+                        <Image src={src} alt="" fill sizes="40px" className="object-cover" />
                       </div>
                     ))}
                     <div className="relative -ml-2 grid size-7 place-items-center rounded-full bg-secondary-500 ring-2 ring-white z-10">
