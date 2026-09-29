@@ -1,6 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { LogoCloud } from "@/components/sections/LogoCloud";
 import { CourseDiscovery } from "@/components/sections/CourseDiscovery";
+import { LearningPaths } from "@/components/sections/LearningPaths";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <LogoCloud />
       <CourseDiscovery />
+      <LearningPaths />
     </main>
   );
 }
