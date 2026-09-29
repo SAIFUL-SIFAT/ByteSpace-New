@@ -29,16 +29,25 @@ export function Hero() {
           className="absolute left-1/2 top-[505px] z-10 aspect-square w-[1149px] -translate-x-1/2 rounded-full bg-secondary-500"
         />
 
-        {/* 3D shapes (desktop only) */}
-        {/* <Image
-          src="/hero/shapes.webp"
-          alt=""
-          aria-hidden
-          width={1440}
-          height={944}
-          priority
-          className="absolute inset-0 z-[15] hidden xl:block"
-        /> */}
+        {/* Decorative Squiggles (desktop only) */}
+        {/* Left Squiggle */}
+        <div className="absolute left-[310px] top-[410px] z-[15] hidden xl:block w-[120px] h-[160px] -rotate-12">
+          <svg viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full drop-shadow-xl" aria-hidden="true">
+            <path d="M75 15 Q20 20 45 45 Q85 50 65 75 Q20 80 45 105 Q85 110 70 125" stroke="#d4fb20" strokeWidth="24" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+        {/* Right Squiggle */}
+        <div className="absolute left-[1020px] top-[380px] z-[15] hidden xl:block w-[140px] h-[180px] rotate-[15deg]">
+          <svg viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full drop-shadow-xl" aria-hidden="true">
+            <path d="M75 15 Q20 20 45 45 Q85 50 65 75 Q20 80 45 105 Q85 110 70 125" stroke="#d4fb20" strokeWidth="24" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+        {/* Bottom Small Squiggle */}
+        <div className="absolute left-[780px] top-[780px] z-[15] hidden xl:block w-[90px] h-[120px] -rotate-[30deg]">
+          <svg viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full drop-shadow-xl" aria-hidden="true">
+            <path d="M75 15 Q20 20 45 45 Q85 50 65 75 Q20 80 45 105 Q85 110 70 125" stroke="#d4fb20" strokeWidth="24" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
 
         {/* Person */}
         <Image
