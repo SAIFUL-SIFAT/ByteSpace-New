@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { Menu, X, ShoppingBag } from "lucide-react";
+import { GridBackground } from "@/components/ui/GridBackground";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
@@ -33,10 +34,7 @@ export function Navbar() {
   return (
     <header className="bg-primary-800 w-full z-50 relative overflow-hidden">
       {/* Grid lines to blend with Hero section */}
-      <div
-        aria-hidden
-        className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_right,rgb(255_255_255/0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgb(255_255_255/0.08)_1px,transparent_1px)] bg-[size:180px_180px]"
-      />
+      <GridBackground />
 
       <Container className="relative">
         <nav

@@ -3,6 +3,7 @@ import { LogoCloud } from "@/components/sections/LogoCloud";
 import { CourseDiscovery } from "@/components/sections/CourseDiscovery";
 import { LearningPaths } from "@/components/sections/LearningPaths";
 import { FeatureSplit } from "@/components/sections/FeatureSplit";
+import { CtaBanner } from "@/components/sections/CtaBanner";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <LearningPaths />
       <FeatureSplit type="learner" />
       <FeatureSplit type="creator" />
+      <CtaBanner />
     </main>
   );
 }
