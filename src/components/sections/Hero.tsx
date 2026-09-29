@@ -4,6 +4,7 @@ import { Search, Star } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Input } from "@/components/ui/Input";
+import { GridBackground } from "@/components/ui/GridBackground";
 import { cn } from "@/lib/cn";
 import { heroContent, studentAvatars } from "@/data/hero";
 
@@ -16,10 +17,7 @@ export function Hero() {
       className="relative h-[944px] overflow-hidden bg-primary-800"
     >
       {/* Grid lines (cell size is an estimate, confirm in Figma) */}
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-[linear-gradient(to_right,rgb(255_255_255/0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgb(255_255_255/0.08)_1px,transparent_1px)] bg-[size:180px_180px]"
-      />
+      <GridBackground />
 
       {/* Art stage: designed at 1440px, centered, cropped on smaller screens */}
       <div className="absolute inset-y-0 left-1/2 w-[1440px] -translate-x-1/2">
