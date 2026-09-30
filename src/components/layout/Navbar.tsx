@@ -68,8 +68,8 @@ export function Navbar() {
             >
               Sign In
             </Link>
-            <Button variant="ghost" className="px-0 hover:bg-transparent hover:text-secondary-500">
-              Join Us
+            <Button asChild variant="ghost" className="px-0 hover:bg-transparent hover:text-secondary-500">
+              <Link href="/signup">Join Us</Link>
             </Button>
             <button
               aria-label="Shopping Cart"
@@ -134,12 +134,13 @@ export function Navbar() {
               Sign In
             </Link>
             <Button
+              asChild
               variant="primary"
               size="lg"
               className="w-full"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Join Us
+              <Link href="/signup">Join Us</Link>
             </Button>
           </div>
         </Container>
