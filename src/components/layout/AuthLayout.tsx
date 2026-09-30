@@ -8,7 +8,7 @@ import { cn } from "@/lib/cn";
 import { Logo } from "@/components/ui/Logo";
 import { Container } from "@/components/ui/Container";
 
-function AuthCourseCard({ course, className }: { course: any; className?: string }) {
+function AuthCourseCard({ course, className }: { course: typeof courses[0]; className?: string }) {
   return (
     <div className={cn("bg-white rounded-[24px] overflow-hidden shadow-2xl flex flex-col border border-neutral-100 h-[384px]", className)}>
       <div className="relative h-[180px] w-full bg-neutral-100 shrink-0">

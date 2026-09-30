@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/Container";
-import { cn } from "@/lib/cn";
+
 
 const LogoipsumText = () => (
   <span className="text-xl font-bold tracking-tight text-[#82868E] ml-2">Logoipsum</span>
