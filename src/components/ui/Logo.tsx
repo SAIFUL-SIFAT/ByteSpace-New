@@ -3,9 +3,11 @@ import { cn } from "@/lib/cn";
 export function Logo({
   className,
   variant = "light",
+  iconOnly = false,
 }: {
   className?: string;
   variant?: "light" | "dark";
+  iconOnly?: boolean;
 }) {
   return (
     <div className={cn("flex items-center gap-2", className)}>
@@ -31,15 +33,17 @@ export function Logo({
           fill="#D4FB20"
         />
       </svg>
-      <span
-        className={cn(
-          "font-bold text-[24px] leading-none tracking-normal",
-          variant === "light" ? "text-white" : "text-neutral-950"
-        )}
-        style={{ fontFamily: "'Clash Display', sans-serif" }}
-      >
-        ByteSpace
-      </span>
+      {!iconOnly && (
+        <span
+          className={cn(
+            "font-bold text-[24px] leading-none tracking-normal",
+            variant === "light" ? "text-white" : "text-neutral-950"
+          )}
+          style={{ fontFamily: "'Clash Display', sans-serif" }}
+        >
+          ByteSpace
+        </span>
+      )}
     </div>
   );
 }
